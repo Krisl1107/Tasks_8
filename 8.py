@@ -1,4 +1,6 @@
+
 z=""
+
 for i in range(1,10):
         k=z+str(i)
         m=int(k)*8+i
@@ -10,3 +12,9 @@ for i in range(1,10):
         m=int(k)*9+i+1
         print(k,"* 9 + ",i+1,"=",m)
         z=k
+
+z="1"
+for i in range(1,10):
+        k=z*i
+        m=int(k)**2
+        print(k, "*  ",k, "=", m)
