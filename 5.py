@@ -1,16 +1,10 @@
-N=2
-p=int(input())
-k_1=0
-k=[]
-
-while N<p:
- N=N+1
- for i in range(1,N):
-    if N%i==0:
-        n_1=i
-        if n_1!=N:
-            k.append(n_1)
-
- if sum(k)==N:
-     k_1+=1
-print(k_1)
+N = int(input())
+k=0
+for n in range(1, N + 1):
+    sum = 0
+    for i in range(1, n // 2 + 1):
+        if n % i == 0:
+            sum += i
+    if sum == n:
+      k+=1
+print(k)
